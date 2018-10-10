@@ -25,21 +25,20 @@ class Index extends React.Component {
             </Hero>
           </IndexHeadContainer>
           <BodyContainer>
-            <h2>A Gatsby Template for Content</h2>
+            <h2>Tutorial on CAAML, OGC standards and INSPIRE</h2>
             <p>
-              Made for modern documentation sites. Table of Contents
-              automatically generated from markdown files.{' '}
+              ISSW 2018, Innsbruck.{' '}
             </p>
-            <CtaButton to={'/lesson-one'}>See Your First Post</CtaButton>
+            <CtaButton to={'/introduction-to-ogc'}>Go to the first topic</CtaButton>
 
             <div className="contributors">
               <p>
-                Created by Eric Windmill.{' '}
-                <a href="https:twitter.com/ericwindmill">
-                  You should follow him on Twitter.
+                Created by GeoAvalanche Team.{' '}
+                <a href="https:twitter.com/geoavalanche">
+                  You should follow us on Twitter.
                 </a>{' '}
-                Also, <a href="https://github.com/Levino">Levin Keller</a> for
-                making it better than I could{"'"}ve alone.
+                Also, <a href="https://github.com/geoavalanche">GeoAvalanche Team</a> for
+                making all of the amazing stuff open source available.
               </p>
             </div>
           </BodyContainer>

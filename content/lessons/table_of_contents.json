@@ -2,41 +2,79 @@
   "id": "table-of-contents",
   "chapters": [
     {
-      "title": "1. Main Chapter",
+      "title": "1. Introduction",
       "chapters": [
         {
-          "title": "1.1 Subchapter",
+          "title": "1.1 OGC Standards",
           "entries": [
             {
-              "entry": "./lesson_one.md"
+              "entry": "./intro_ogc.md"
             }
           ],
           "chapters": [
             {
-              "title": "1.1.1 Sub-subchapter",
+              "title": "1.1.1 Web Mapping Service",
               "entries": [
                 {
-                  "entry": "./lesson_two.md"
+                  "entry": "./intro_wms.md"
                 },
                 {
-                  "entry": "./lesson_three.md"
+                  "entry": "./examples_wms.md"
+                }
+              ]
+            },
+            {
+              "title": "1.1.2 Web Feature Service",
+              "entries": [{
+                  "entry": "./intro_wfs.md"
+                },
+                {
+                  "entry": "./examples_wfs.md"
+                }
+              ]
+            },
+            {
+              "title": "1.1.3 Web Coverage Service",
+              "entries": [{
+                  "entry": "./intro_wcs.md"
+                },
+                {
+                  "entry": "./examples_wcs.md"
+                }
+              ]
+            },
+            {
+              "title": "1.1.4 Web Processing Service",
+              "entries": [{
+                  "entry": "./intro_wps.md"
+                },
+                {
+                  "entry": "./examples_wps.md"
                 }
               ]
             }
           ]
         },
         {
-          "title": "1.2 Subchapter",
+          "title": "1.2 CAAML",
           "entries": [
             {
-              "entry": "./lesson_four.md"
+              "entry": "./intro_caaml.md"
+            }
+          ]
+        },
+        {
+          "title": "1.3 INSPIRE",
+          "entries": [
+            {
+              "entry": "./intro_inspire.md"
             }
           ]
         }
       ]
     },
     {
-      "title": "2. Main Chapter",
+      "title": "2. Standards in action",
       "chapters": [
         {
           "title": "2.1 Subchapter",

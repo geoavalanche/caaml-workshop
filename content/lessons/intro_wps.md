@@ -1,5 +1,5 @@
 ---
-title: "Introduction to WMS"
+title: "Introduction to WPS"
 ---
 
 ## What it is

@@ -29,16 +29,16 @@ class UserLinks extends Component {
   render() {
     return (
       <Container className="user-links">
-        <UserIcon href="https://github.com/ericwindmill">
+        <UserIcon href="https://github.com/geoavalanche">
           <FaGithubAlt style={iconStyle} />
         </UserIcon>
-        <UserIcon href="https://twitter.com/ericwindmill?lang=en">
+        <UserIcon href="https://twitter.com/geoavalanche?lang=en">
           <FaTwitter style={iconStyle} />
         </UserIcon>
-        <UserIcon href="https://www.messenger.com/t/eric.windmill">
+        <UserIcon href="https://www.messenger.com/t/geoavalanche">
           <MdMessage style={iconStyle} />
         </UserIcon>
-        <UserIcon href="mailto:eric@ericwindmill.com">
+        <UserIcon href="mailto:geoavalanche@gmail.com">
           <MdEmail style={iconStyle} />
         </UserIcon>
       </Container>

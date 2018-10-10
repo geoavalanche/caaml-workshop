@@ -13,7 +13,7 @@ In the context of [**INSPIRE**](https://inspire.ec.europa.eu/), interoperability
 There are currently hundreds of products and thousands of references for OGC standards in use worldwide.
 There are also community standards which have been defined by extending a *baseline* standard and become a reference implementation for specific sectors. A good example is in the aviation sector where an application profile of the OGC **Geography Markup Language** ([GML](http://www.opengeospatial.org/standards/gml)) called Aeronautical Information Exchange Model ([AIXM](http://www.aixm.aero/public/subsite_homepage/homepage.html)) is used by Eurocontrol in Europe and the Federal Aviation Authority (FAA) in North America for interoperability between aviation datasets.
 
- > So why don't imagine the same success for **CAAML**?
+> So why don't imagine the same success for **CAAML**?
 
 The OGC actively collaborates with numerous other standards organizations. For example, the OGC has relationships with [ISO](https://www.iso.org/). The bridge with ISO, the International Organization for Standardization, is especially strong as OGC standards are often approved as ISO standards. Meaningful examples are e.g. OGC’s Web Feature Service (**WFS**), Web Mapping Service (**WMS**) and the above **GML** which also entered into ISO standards (ISO 19142, ISO 19128 and ISO 19136).
 
@@ -38,3 +38,5 @@ In addition also the exploitation of remote processes and models over the web wi
 
 * [WPS - Web Processing Service](http://www.opengeospatial.org/standards/wps)
   it is a web service specification for running and combining processes
+
+If you want to learn more follow this e-learning course from [OGC](http://cite.opengeospatial.org/pub/cite/files/edu/index.html)
