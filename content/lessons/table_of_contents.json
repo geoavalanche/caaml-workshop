@@ -25,7 +25,8 @@
             },
             {
               "title": "1.1.2 Web Feature Service",
-              "entries": [{
+              "entries": [
+                {
                   "entry": "./intro_wfs.md"
                 },
                 {
@@ -77,10 +78,51 @@
       "title": "2. Standards in action",
       "chapters": [
         {
-          "title": "2.1 Subchapter",
+          "title": "2.1 Prepare data and toolkit",
           "entries": [
             {
-              "entry": "./lesson_five.md"
+              "entry": "./intro_data_tools.md"
+            },
+            {
+              "entry": "./bootstrap_servers.md"
+            }
+          ],
+          "chapters": [
+            {
+              "title": "2.1.1 Manage the data",
+              "entries": [
+                {
+                  "entry": "./load_data.md"
+                },
+                {
+                  "entry": "./clean_data.md"
+                }
+              ]
+            },
+            {
+              "title": "2.1.2 Design the CAAML schema",
+              "entries": [
+                {
+                  "entry": "./er_design.md"
+                },
+                {
+                  "entry": "./populate_data.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "2.2 Build CAAML with GeoAvalanche",
+          "entries": [
+            {
+              "entry": "caaml_hale.md"
+            },
+            {
+              "entry": "load_configuration.md"
+            },
+            {
+              "entry": "query_data.md"
             }
           ]
         }
