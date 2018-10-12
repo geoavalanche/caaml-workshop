@@ -1,0 +1,891 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="preload" href="/caaml/component---src-layouts-index-jsx-356aa9ebd94b9899d6e9.js" as="script"/><link rel="preload" href="/caaml/component---src-templates-lesson-jsx-d57a97cff3424e3f60b1.js" as="script"/><link rel="preload" href="/caaml/path---configure-the-application-schema-for-caaml-30da2204746b277c7093.js" as="script"/><link rel="preload" href="/caaml/app-ec8c5fdb00fa56319f02.js" as="script"/><link rel="preload" href="/caaml/commons-0b43cbb832d47af925bf.js" as="script"/><style type="text/css" data-styled-components="hZJkxC cPNtZK cVAxRg lirWLc cOoyZF iUvEoY jPXSt efUMmA jBrIVz cHwHYY jOTDrs cUsxCI hFnaBo gojrFS iMAlvH izBdHr enLhs" data-styled-components-is-local="true">/* sc-component-id: sc-bdVaJa */
+
+.cOoyZF{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;}
+/* sc-component-id: sc-bwzfXH */
+
+.iUvEoY{margin-left:25px;color:white;}.iUvEoY:hover{color:rgba(0,0,0,0.2);border-bottom:none;}
+/* sc-component-id: sc-htpNat */
+
+.lirWLc{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;width:100%;background:#41B883;}.lirWLc .nav-link{font-size:1.6rem;margin-right:10px;font-weight:200;color:black;}@media screen and (max-width:600px){.lirWLc{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.lirWLc section{margin-bottom:20px;}.lirWLc span{display:none;}}
+/* sc-component-id: sc-bxivhb */
+
+.cVAxRg{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;background:#41B883;padding:25px;}
+/* sc-component-id: sc-gzVnrw */
+
+.efUMmA{padding:25px;margin:0;}
+/* sc-component-id: sc-htoDjs */
+
+.jBrIVz{list-style:none;margin:0;}
+/* sc-component-id: sc-dnqmqq */
+
+.hFnaBo{list-style:none;}
+/* sc-component-id: sc-iwsKbI */
+
+.iMAlvH{display:inline-block;font-weight:200;color:black;margin:0;line-height:1.5;border-bottom:1px solid transparent;text-decoration:none;}
+/* sc-component-id: sc-gZMcBi */
+
+.cHwHYY{margin:0;}
+/* sc-component-id: sc-gqjmRU */
+
+.gojrFS{margin:0;}.gojrFS a:hover{border-bottom:1px solid black;}
+/* sc-component-id: sc-VigVT */
+
+.jOTDrs{font-weight:200;font-size:2.8rem;color:#41B883;}
+
+.cUsxCI{font-weight:600;font-size:2.2rem;color:black;}
+
+.izBdHr{font-weight:400;font-size:1.8rem;color:#0a5eb7;}
+/* sc-component-id: sc-jTzLTM */
+
+.hZJkxC{height:100vh;display:grid;grid-template-rows:75px 1fr;grid-template-columns:300px 1fr;}@media screen and (max-width:600px){.hZJkxC{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:inherit;}}
+/* sc-component-id: sc-fjdhpX */
+
+.enLhs{grid-column:2 / 3;grid-row:2 / 3;overflow:scroll;justify-self:center;width:100%;padding:25px;}@media screen and (max-width:600px){.enLhs{-webkit-order:2;-ms-flex-order:2;order:2;}}.enLhs > div{max-width:850px;margin:auto;}.enLhs > h1{color:#35495E;}
+/* sc-component-id: sc-jzJRlG */
+
+.cPNtZK{grid-column:1 / 3;grid-row:1 / 2;z-index:2;}@media screen and (max-width:600px){.cPNtZK{-webkit-order:1;-ms-flex-order:1;order:1;}}
+/* sc-component-id: sc-cSHVUG */
+
+.jPXSt{grid-column:1 / 2;grid-row:2 / 3;background:#F6F6F6;overflow:scroll;}@media screen and (max-width:600px){.jPXSt{-webkit-order:3;-ms-flex-order:3;order:3;overflow:inherit;}}
+</style><title data-react-helmet="true">Configure the application schema for CAAML | CAAML meets OGC standards and INSPIRE</title><meta data-react-helmet="true" name="description" content="Configure the mapping Our goal is to build a mapping between the schema that has been implemented in the  caaml_data  database and our small…"/><meta data-react-helmet="true" name="image" content="http://geoavalanche.org/caamlnull"/><meta data-react-helmet="true" property="og:url" content="http://geoavalanche.org/caaml/configure-the-application-schema-for-caaml"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:title" content="Configure the application schema for CAAML"/><meta data-react-helmet="true" property="og:description" content="Configure the mapping Our goal is to build a mapping between the schema that has been implemented in the  caaml_data  database and our small…"/><meta data-react-helmet="true" property="og:image" content="http://geoavalanche.org/caamlnull"/><meta data-react-helmet="true" property="fb:app_id" content="1825356251115265"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="geoavalanche"/><meta data-react-helmet="true" name="twitter:title" content="Configure the application schema for CAAML"/><meta data-react-helmet="true" name="twitter:description" content="Configure the mapping Our goal is to build a mapping between the schema that has been implemented in the  caaml_data  database and our small…"/><meta data-react-helmet="true" name="twitter:image" content="http://geoavalanche.org/caamlnull"/><script data-react-helmet="true" type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","url":"http://geoavalanche.org/caaml","name":"Configure the application schema for CAAML","alternateName":"CAAML meets OGC standards and INSPIRE"},[{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://geoavalanche.org/caaml/configure-the-application-schema-for-caaml","name":"Configure the application schema for CAAML","image":"http://geoavalanche.org/caamlnull"}}]},{"@context":"http://schema.org","@type":"BlogPosting","url":"http://geoavalanche.org/caaml","name":"Configure the application schema for CAAML","alternateName":"CAAML meets OGC standards and INSPIRE","headline":"Configure the application schema for CAAML","image":{"@type":"ImageObject","url":"http://geoavalanche.org/caamlnull"},"description":"Configure the mapping Our goal is to build a mapping between the schema that has been implemented in the  caaml_data  database and our small…"}]]</script><link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,+400i,+700,+700i|Space+Mono:400,700" rel="stylesheet"/><style type="text/css">
+    .anchor {
+      float: left;
+      padding-right: 4px;
+      margin-left: -20px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = location.hash.replace('#', '')
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var offset = element.offsetTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="manifest" href="/manifest.json"/><meta name="theme-color" content="#0079ac"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/caaml/static/logo-48.498be729.png"/><style id="gatsby-inlined-css">*{box-sizing:border-box;margin:0;padding:0}table{border-collapse:collapse}table,td,th{border:1px solid #000;padding:5px}html{font-size:10px}a,body,h1,h2,h3,h4,h5,h6,li,p,ul{font-family:Avenir,Helvetica Neue,sans-serif}dl,h1,h2,h3,h4,h5,h6,ol,p,ul{margin:30px 0}dd,dt,li,li>*{margin:10px 0}code,pre{font-family:Space Mono,monospace}h1{font-size:4rem}h2{font-size:3.5rem}h3{font-size:3rem}h4{font-size:2.4rem}h5{font-size:2rem}h6{font-size:1.6rem}a,dd,dt,li,p,th,tr{font-size:1.8rem}a{color:#2973b7;text-decoration:none}a:hover{border-bottom:1px solid #000}.gatsby-highlight{padding-bottom:30px}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;font-family:Space Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.87;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;box-shadow:.05555555555555555rem .05555555555555555rem 1.1111111111111112rem hsla(0,0%,8%,.37)}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:0}:not(pre)>code[class*=language-],pre[class*=language-]{background:#1d1f27}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#b5bec3}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#efc090}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#dc78dc}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.function{color:#bed6ff}.token.keyword{color:#00d0d0}.token.important,.token.regex{color:#ccdf32}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.social-links{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:15px 0}.social-links>div{margin:5px 15px}.share-count{text-align:center}code[class*=language-],pre[class*=language-]{font-family:Consolas,Menlo,Monaco,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Courier New,Courier,monospace;font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;background:#1d1f21;color:#c5c8c6}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{text-shadow:none;background:#b4b7b4}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b4b7b4}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#969896}.token.punctuation{color:#c5c8c6}.token.namespace{opacity:.7}.token.boolean,.token.number,.token.operator{color:#de935f}.token.property{color:#f0c674}.token.tag{color:#81a2be}.token.string{color:#8abeb7}.token.selector{color:#b294bb}.token.attr-name{color:#de935f}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#8abeb7}.token.attr-value,.token.control,.token.directive,.token.keyword,.token.unit{color:#b5bd68}.token.atrule,.token.regex,.token.statement{color:#8abeb7}.token.placeholder,.token.variable{color:#81a2be}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #fff;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#c66}.token.entity{cursor:help}pre>code.highlight{outline:.4em solid #c66;outline-offset:.4em}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="1281241917"><!-- react-empty: 2 --><div data-reactid="3"><!-- react-empty: 4 --><!-- react-empty: 5 --><div class="sc-jTzLTM hZJkxC" data-reactid="6"><div class="sc-jzJRlG cPNtZK" data-reactid="7"><div class="sc-bxivhb cVAxRg" data-reactid="8"><div class="sc-htpNat lirWLc" data-reactid="9"><section data-reactid="10"><a class="nav-link" href="/caaml/" data-reactid="11"><!-- react-text: 12 --> <!-- /react-text --><!-- react-text: 13 -->HOME<!-- /react-text --><!-- react-text: 14 --> <!-- /react-text --></a><a class="nav-link" href="/caaml/introduction-to-ogc" data-reactid="15"><!-- react-text: 16 --> <!-- /react-text --><!-- react-text: 17 -->DOCS<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --></a><a class="nav-link" href="/caaml/about" data-reactid="19"><!-- react-text: 20 --> <!-- /react-text --><!-- react-text: 21 -->ABOUT<!-- /react-text --><!-- react-text: 22 --> <!-- /react-text --></a></section><span data-reactid="23"><div class="user-links sc-bdVaJa cOoyZF" data-reactid="24"><a class="sc-bwzfXH iUvEoY" href="https://github.com/geoavalanche" data-reactid="25"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;width:20px;height:20px;" data-reactid="26"><g data-reactid="27"><path d="m15.8 27.1q0 0.9-0.3 1.9t-1 1.7-1.6 0.7-1.6-0.7-1-1.7-0.2-1.9 0.3-1.8 0.9-1.7 1.6-0.7 1.6 0.7 1 1.7 0.3 1.8z m14.3 0q0 0.9-0.3 1.9t-1 1.7-1.6 0.7-1.6-0.7-1-1.7-0.2-1.9 0.2-1.8 1-1.7 1.6-0.7 1.6 0.7 1 1.7 0.3 1.8z m3.5 0q0-2.6-1.5-4.5t-4.2-1.9q-0.9 0-4.3 0.5-1.6 0.2-3.5 0.2t-3.5-0.2q-3.4-0.5-4.4-0.5-2.6 0-4.2 1.9t-1.5 4.5q0 2 0.7 3.5t1.8 2.3 2.7 1.3 3.2 0.7 3.3 0.1h3.7q1.9 0 3.4-0.1t3.1-0.7 2.7-1.3 1.8-2.3 0.7-3.5z m5-3.9q0 4.6-1.3 7.4-0.9 1.7-2.4 3t-3.1 1.9-3.8 1.1-3.8 0.4-3.8 0.1q-1.7 0-3.1 0t-3.3-0.3-3.4-0.7-3.1-1.1-2.7-1.8-1.9-2.6q-1.4-2.7-1.4-7.4 0-5.3 3-8.8-0.6-1.9-0.6-3.8 0-2.6 1.2-4.9 2.4 0 4.2 0.9t4.2 2.8q3.3-0.8 6.9-0.8 3.3 0 6.3 0.7 2.3-1.8 4.2-2.7t4.2-0.9q1.1 2.3 1.1 4.9 0 1.9-0.6 3.7 3 3.6 3 8.9z" data-reactid="28"></path></g></svg></a><a class="sc-bwzfXH iUvEoY" href="https://twitter.com/geoavalanche?lang=en" data-reactid="29"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;width:20px;height:20px;" data-reactid="30"><g data-reactid="31"><path d="m37.7 9.1q-1.5 2.2-3.7 3.7 0.1 0.3 0.1 1 0 2.9-0.9 5.8t-2.6 5.5-4.1 4.7-5.7 3.3-7.2 1.2q-6.1 0-11.1-3.3 0.8 0.1 1.7 0.1 5 0 9-3-2.4-0.1-4.2-1.5t-2.6-3.5q0.8 0.1 1.4 0.1 1 0 1.9-0.3-2.5-0.5-4.1-2.5t-1.7-4.6v0q1.5 0.8 3.3 0.9-1.5-1-2.4-2.6t-0.8-3.4q0-2 0.9-3.7 2.7 3.4 6.6 5.4t8.3 2.2q-0.2-0.9-0.2-1.7 0-3 2.1-5.1t5.1-2.1q3.2 0 5.3 2.3 2.4-0.5 4.6-1.7-0.8 2.5-3.2 3.9 2.1-0.2 4.2-1.1z" data-reactid="32"></path></g></svg></a><a class="sc-bwzfXH iUvEoY" href="https://www.messenger.com/t/geoavalanche" data-reactid="33"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;width:20px;height:20px;" data-reactid="34"><g data-reactid="35"><path d="m30 13.4v-3.4h-20v3.4h20z m0 5v-3.4h-20v3.4h20z m0 5v-3.4h-20v3.4h20z m3.4-20c1.8 0 3.2 1.4 3.2 3.2v20c0 1.8-1.4 3.4-3.2 3.4h-23.4l-6.6 6.6v-30c0-1.8 1.4-3.2 3.2-3.2h26.8z" data-reactid="36"></path></g></svg></a><a class="sc-bwzfXH iUvEoY" href="mailto:geoavalanche@gmail.com" data-reactid="37"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align:middle;width:20px;height:20px;" data-reactid="38"><g data-reactid="39"><path d="m33.4 13.4v-3.4l-13.4 8.4-13.4-8.4v3.4l13.4 8.2z m0-6.8q1.3 0 2.3 1.1t0.9 2.3v20q0 1.3-0.9 2.3t-2.3 1.1h-26.8q-1.3 0-2.3-1.1t-0.9-2.3v-20q0-1.3 0.9-2.3t2.3-1.1h26.8z" data-reactid="40"></path></g></svg></a></div></span></div></div></div><div class="sc-cSHVUG jPXSt" data-reactid="41"><div class="sc-gzVnrw efUMmA" data-reactid="42"><ol class="sc-htoDjs jBrIVz" data-reactid="43"><li class="sc-gZMcBi cHwHYY" data-reactid="44"><h5 class="sc-VigVT jOTDrs" data-reactid="45">1. Introduction</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="46"></li><li class="sc-gZMcBi cHwHYY" data-reactid="47"><ol class="sc-htoDjs jBrIVz" data-reactid="48"><li class="sc-gZMcBi cHwHYY" data-reactid="49"><h5 class="sc-VigVT cUsxCI" data-reactid="50">1.1 OGC Standards</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="51"><ol class="sc-dnqmqq hFnaBo" data-reactid="52"><li class="sc-gqjmRU gojrFS" data-reactid="53"><a href="/caaml/introduction-to-ogc" data-reactid="54"><h6 class="sc-iwsKbI iMAlvH" data-reactid="55">Introduction to OGC</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="56"><ol class="sc-htoDjs jBrIVz" data-reactid="57"><li class="sc-gZMcBi cHwHYY" data-reactid="58"><h5 class="sc-VigVT izBdHr" data-reactid="59">1.1.1 Web Mapping Service</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="60"><ol class="sc-dnqmqq hFnaBo" data-reactid="61"><li class="sc-gqjmRU gojrFS" data-reactid="62"><a href="/caaml/introduction-to-wms" data-reactid="63"><h6 class="sc-iwsKbI iMAlvH" data-reactid="64">Introduction to WMS</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="65"><a href="/caaml/wms-examples" data-reactid="66"><h6 class="sc-iwsKbI iMAlvH" data-reactid="67">WMS Examples</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="68"></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="69"><li class="sc-gZMcBi cHwHYY" data-reactid="70"><h5 class="sc-VigVT izBdHr" data-reactid="71">1.1.2 Web Feature Service</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="72"><ol class="sc-dnqmqq hFnaBo" data-reactid="73"><li class="sc-gqjmRU gojrFS" data-reactid="74"><a href="/caaml/introduction-to-wfs" data-reactid="75"><h6 class="sc-iwsKbI iMAlvH" data-reactid="76">Introduction to WFS</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="77"><a href="/caaml/wfs-examples" data-reactid="78"><h6 class="sc-iwsKbI iMAlvH" data-reactid="79">WFS Examples</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="80"></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="81"><li class="sc-gZMcBi cHwHYY" data-reactid="82"><h5 class="sc-VigVT izBdHr" data-reactid="83">1.1.3 Web Coverage Service</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="84"><ol class="sc-dnqmqq hFnaBo" data-reactid="85"><li class="sc-gqjmRU gojrFS" data-reactid="86"><a href="/caaml/introduction-to-wcs" data-reactid="87"><h6 class="sc-iwsKbI iMAlvH" data-reactid="88">Introduction to WCS</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="89"><a href="/caaml/wcs-examples" data-reactid="90"><h6 class="sc-iwsKbI iMAlvH" data-reactid="91">WCS Examples</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="92"></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="93"><li class="sc-gZMcBi cHwHYY" data-reactid="94"><h5 class="sc-VigVT izBdHr" data-reactid="95">1.1.4 Web Processing Service</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="96"><ol class="sc-dnqmqq hFnaBo" data-reactid="97"><li class="sc-gqjmRU gojrFS" data-reactid="98"><a href="/caaml/introduction-to-wps" data-reactid="99"><h6 class="sc-iwsKbI iMAlvH" data-reactid="100">Introduction to WPS</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="101"><a href="/caaml/wps-examples" data-reactid="102"><h6 class="sc-iwsKbI iMAlvH" data-reactid="103">WPS Examples</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="104"></li></ol></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="105"><li class="sc-gZMcBi cHwHYY" data-reactid="106"><h5 class="sc-VigVT cUsxCI" data-reactid="107">1.2 CAAML</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="108"><ol class="sc-dnqmqq hFnaBo" data-reactid="109"><li class="sc-gqjmRU gojrFS" data-reactid="110"><a href="/caaml/introduction-to-caaml" data-reactid="111"><h6 class="sc-iwsKbI iMAlvH" data-reactid="112">Introduction to CAAML</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="113"></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="114"><li class="sc-gZMcBi cHwHYY" data-reactid="115"><h5 class="sc-VigVT cUsxCI" data-reactid="116">1.3 INSPIRE</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="117"><ol class="sc-dnqmqq hFnaBo" data-reactid="118"><li class="sc-gqjmRU gojrFS" data-reactid="119"><a href="/caaml/introduction-to-inspire" data-reactid="120"><h6 class="sc-iwsKbI iMAlvH" data-reactid="121">Introduction to INSPIRE</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="122"></li></ol></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="123"><li class="sc-gZMcBi cHwHYY" data-reactid="124"><h5 class="sc-VigVT jOTDrs" data-reactid="125">2. Standards in action</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="126"></li><li class="sc-gZMcBi cHwHYY" data-reactid="127"><ol class="sc-htoDjs jBrIVz" data-reactid="128"><li class="sc-gZMcBi cHwHYY" data-reactid="129"><h5 class="sc-VigVT cUsxCI" data-reactid="130">2.1 Prepare data and toolkit</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="131"><ol class="sc-dnqmqq hFnaBo" data-reactid="132"><li class="sc-gqjmRU gojrFS" data-reactid="133"><a href="/caaml/data-and-geospatial-tools" data-reactid="134"><h6 class="sc-iwsKbI iMAlvH" data-reactid="135">Data and geospatial tools</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="136"><a href="/caaml/start-the-environment" data-reactid="137"><h6 class="sc-iwsKbI iMAlvH" data-reactid="138">Start the environment</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="139"><ol class="sc-htoDjs jBrIVz" data-reactid="140"><li class="sc-gZMcBi cHwHYY" data-reactid="141"><h5 class="sc-VigVT izBdHr" data-reactid="142">2.1.1 Manage the data</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="143"><ol class="sc-dnqmqq hFnaBo" data-reactid="144"><li class="sc-gqjmRU gojrFS" data-reactid="145"><a href="/caaml/load-data" data-reactid="146"><h6 class="sc-iwsKbI iMAlvH" data-reactid="147">Load Data</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="148"><a href="/caaml/clean-data" data-reactid="149"><h6 class="sc-iwsKbI iMAlvH" data-reactid="150">Clean Data</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="151"></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="152"><li class="sc-gZMcBi cHwHYY" data-reactid="153"><h5 class="sc-VigVT izBdHr" data-reactid="154">2.1.2 Design the CAAML schema</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="155"><ol class="sc-dnqmqq hFnaBo" data-reactid="156"><li class="sc-gqjmRU gojrFS" data-reactid="157"><a href="/caaml/caaml-model-design" data-reactid="158"><h6 class="sc-iwsKbI iMAlvH" data-reactid="159">CAAML model design</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="160"><a href="/caaml/populate-region" data-reactid="161"><h6 class="sc-iwsKbI iMAlvH" data-reactid="162">Populate Region</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="163"></li></ol></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="164"><li class="sc-gZMcBi cHwHYY" data-reactid="165"><h5 class="sc-VigVT cUsxCI" data-reactid="166">2.2 Build CAAML with GeoAvalanche</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="167"><ol class="sc-dnqmqq hFnaBo" data-reactid="168"><li class="sc-gqjmRU gojrFS" data-reactid="169"><a href="/caaml/configure-the-application-schema-for-caaml" data-reactid="170"><h6 class="sc-iwsKbI iMAlvH" data-reactid="171">Configure the application schema for CAAML</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="172"><a href="/caaml/push-the-configuration-to-geo-avalanche" data-reactid="173"><h6 class="sc-iwsKbI iMAlvH" data-reactid="174">Push the configuration to GeoAvalanche</h6></a></li><li class="sc-gqjmRU gojrFS" data-reactid="175"><a href="/caaml/query-our-region-features" data-reactid="176"><h6 class="sc-iwsKbI iMAlvH" data-reactid="177">Query our Region features</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="178"></li></ol></li></ol><ol class="sc-htoDjs jBrIVz" data-reactid="179"><li class="sc-gZMcBi cHwHYY" data-reactid="180"><h5 class="sc-VigVT jOTDrs" data-reactid="181">3. Main Chapter</h5></li><li class="sc-gZMcBi cHwHYY" data-reactid="182"><ol class="sc-dnqmqq hFnaBo" data-reactid="183"><li class="sc-gqjmRU gojrFS" data-reactid="184"><a href="/caaml/lesson-six" data-reactid="185"><h6 class="sc-iwsKbI iMAlvH" data-reactid="186">Lesson Six</h6></a></li></ol></li><li class="sc-gZMcBi cHwHYY" data-reactid="187"></li></ol></div></div><div class="sc-fjdhpX enLhs" data-reactid="188"><div data-reactid="189"><h1 data-reactid="190">Configure the application schema for CAAML</h1><div data-reactid="191"><h2 id="configure-the-mapping"><a href="#configure-the-mapping" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure the mapping</h2>
+<p>Our goal is to build a mapping between the schema that has been implemented in the <code>caaml_data</code> database and our small portion of the EAWS CAAML schema <code>CAAMLv5_BulletinEAWS_GA.xsd</code>.</p>
+<p>Open Hale Studio for the goal of this section:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-55f2e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 56.015625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABW0lEQVQoz6VSXUvDMBTt/2eCrw6cqOCD+KA/Qea6D33YEHQOZjuGTdP1I23Sj7Xdjk1gs3MKDi+cXpKenJx7b7SOfo/e4And/uOP0PsDtDs6HvRuxav2BvucTq+Pti7RhXZ7d4XWZRONkxaOmmcHoVHLx6cXOL++gRaQZ9jzV9i2rfCfWK1W0JIkAQsZGAsQx/Gv5GVRIhAJKONwmAANOES63BcsyxJhGELmoih2IPe25PUaxFngZTLF29QAIQTUcSCEUEaksSzLoElVSimiKFLCnHNFkoLrSqQe1AswmhiYE1pVxOD7/g5HOeRpBj+KYbkM2TJXruqQpE3IS9I0Vciqc3K9V7L8+JHAuzmDZVlVP79cStd5nitylhdwghAzsoDxQVWZ3yvYCsofo+EQhmHAqfriui48z1P54ClvBMfjMUzTVC6JRVTT5TOqD+ZPglzEqjQJOan/vsNP4WA4dYIcuXcAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="hale"
+        title=""
+        src="/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-44d6a.png"
+        srcset="/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-f4799.png 173w,
+/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-b3b1d.png 345w,
+/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-44d6a.png 690w,
+/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-bc0f7.png 1035w,
+/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-b50e5.png 1380w,
+/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-0ed32.png 2070w,
+/caaml/static/hale-28ca2bbb4544ac418230a65061f91d82-55f2e.png 2560w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<h3 id="check-the-geoavalanche-compatibility-mode"><a href="#check-the-geoavalanche-compatibility-mode" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Check the GeoAvalanche compatibility mode</h3>
+<p>If we want to work with the GeoAvalanche server in order to upload the mapping configuration of CAAML as new GML application schema datastore we have to double check that Hale is properly set up and the compatibility mode is on.
+Select <em>Transformation</em> → <em>Compatibility mode</em> → <em>GeoServer</em> from the menu. You should see Geo appearing close to a green tick mark icon at the status bar on the bottom right side:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/compatibility_hale-d64573013e905db331144639faaba740-1fa97.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 183px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 36.612021857923494%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAAZklEQVQY02P4Ty749esnw8BpBmLy0Pfv3xhev/tJHnr19ifDw2ff8KM7998AyXNPnp69cO/UubtnLz66c+/FzUdPbz16SVjz7fuvJ9/dvPXh+UNHLyxaun7VpoO377289fD57UevAbdpjyCuVs05AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="compatibility hale"
+        title=""
+        src="/caaml/static/compatibility_hale-d64573013e905db331144639faaba740-1fa97.png"
+        srcset="/caaml/static/compatibility_hale-d64573013e905db331144639faaba740-c3a17.png 173w,
+/caaml/static/compatibility_hale-d64573013e905db331144639faaba740-1fa97.png 183w"
+        sizes="(max-width: 183px) 100vw, 183px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<h3 id="mapping-strategy"><a href="#mapping-strategy" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mapping strategy</h3>
+<ul>
+<li>one-to-one relation between source types and the correspondent target type will be established using the <strong>Retype</strong> function. In this basic example, the <strong>caaml_Region</strong> source type has a simple correlation to the <strong>Region</strong> target type, so that we can expect for each record in the <em>caaml_Region</em> table a correspondent <em>Region</em> feature has to be created in order to support the EAWS CAAML schema</li>
+<li>Once the <strong>Retype</strong> relation has been created we want to map the properties from the source table to the XML properties of the target</li>
+</ul>
+<p>Things can be a little more complex for complex relations like <strong>Bulletin</strong>, <strong>BulletinMeasurements</strong> and <strong>LocationCollection</strong>, just to mention few, but the concept of mapping would still continue to be valid.</p>
+<h3 id="configure-source-and-target-schema"><a href="#configure-source-and-target-schema" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure source and target schema</h3>
+<h4 id="set-the-source-schema"><a href="#set-the-source-schema" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set the source schema</h4>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-55f2e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACV0lEQVQ4y41T7WvTcBDuHyt+EhVliPZDkaHO4cZgtQ5E/eon8QVEujark26V2W7ttmbpmqbd7EuatU3SJmmTdo93PwhOGJsHxx2X3709zyUiffmG9PcqctI2fm1kUf65i+ZRDXr1BNnMD3z99AHJzx8hJVPIZrewnd3E5oaEVCqN9WQSUlpCRtogfx1b2RwiVVXD71YHlUoFdU1Dq9XCeDxGEARot9tQVRXVqoqKcgS5XEaxeIiDw0N614au6+h0OqhpDRT2DiimI+K6LobDIbrdrnhgkz+dTnF+fo7JZIIJFbeHDnr9AWzbgud5ohlrmDsh6/u+iEVAUjx2kd4xkcpPkC4EQlMFH6kdC+s5HZm8hc1SgJLqw3F9XCWioOO56Pf7cBwHnuuJCWezGUzTFJPzJCwc50muLchr1GoqZFmGoiiElYxms0n4tAk7RUDBEPx3wXASBpiJYMsTs89kMTFMFseuLRh2DoHmBCaDLa99UcJ3VxYcDEyBEa8dMnWZesT20LbhkHqEuUM5jDnn2pZFGxoYDS1EDMMQH8KPJjUYjUbo9i1oug3NoJOxmay/BdgOel2cagpaBMs/ExZL+yiWDrBX3EflWBV+vrAHWTlG+aiC7hnhFsww9qcXlKAJppevrGl1qDWNCOjgrNdHvd6gP6OGRuNEqGH06HgdOuqROGLTJPL0U9HIGTlim1BN20QkvhrHYuI9Vl6+xdJyHO9W7+PNq+d4vbaIhWd3cevhPczFniDxYh4rS/N4QH4segfRxzcxd/sGlmJRxBYW8OjpGhLLi/gDP3y9FkqlUUQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="source hale"
+        title=""
+        src="/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-44d6a.png"
+        srcset="/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-f4799.png 173w,
+/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-b3b1d.png 345w,
+/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-44d6a.png 690w,
+/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-bc0f7.png 1035w,
+/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-b50e5.png 1380w,
+/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-0ed32.png 2070w,
+/caaml/static/source_hale-8a87a1dadcefd8260772181c92b7b215-55f2e.png 2560w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Define the source as a JDBC connection:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/source_connection_hale-d99d9b8d0f51cbed764e537e81c3d40c-ea61e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 78.01047120418848%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABn0lEQVQ4y9WUW0/bQBCF9///GZ54L8Rpajt2WhI7jm+7vntNCGorhKK0OcwsuFIFD0HkBUufZnd1NJqdnWPh/3DwfekjCIL/WK1WcF0Xtm3DcZx/eJ6HMAxf6UdEVZaI4xhVVeFwOOB4PBre87H+4XGPu58PEFprNE2D7XYLXuthQN/3uKX9fr8/KeHhz18EmcaXuYJo2xZFUaAsK5RtA6kUFFHXNVShkEtpqm+b1mjyLMcmTuAtbuC4c/ieb9rgUZzNbIgkyZGQIE1TpNnzOklSZJsAMosh85yQUFK9RImMdEG4oZ6FiNYRoigykfsueDG1puaQH8F1XGq+i+VyiYoq4ut3XXcSrBfWxMLk6hqL1QbOgl6WCGKJWNZohh2G+9/Qu1P4hUrfQ3BFs+lXLG7WmMzmsGzfJE2LBrXeoTkR1qZlB1GoAiPcp48iyqI0yTieg0+QsO96nBOhe7LbGRFdS0P5Bmw19riJNY1QVdPg1mTJ5zPe8/moGXmzwrF8HoOOPB3IAZd2jgsrwbe1NolysmRKFh34Z0JafgdO+AQ+mZIYf7jqOQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="source connection hale"
+        title=""
+        src="/caaml/static/source_connection_hale-d99d9b8d0f51cbed764e537e81c3d40c-44d6a.png"
+        srcset="/caaml/static/source_connection_hale-d99d9b8d0f51cbed764e537e81c3d40c-f4799.png 173w,
+/caaml/static/source_connection_hale-d99d9b8d0f51cbed764e537e81c3d40c-b3b1d.png 345w,
+/caaml/static/source_connection_hale-d99d9b8d0f51cbed764e537e81c3d40c-44d6a.png 690w,
+/caaml/static/source_connection_hale-d99d9b8d0f51cbed764e537e81c3d40c-bc0f7.png 1035w,
+/caaml/static/source_connection_hale-d99d9b8d0f51cbed764e537e81c3d40c-ea61e.png 1146w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Once imported the source then edit the relevant source types of interest:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-55f2e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACN0lEQVQ4y71TW28SQRjdH2t8MqbRNEZ5IKZRkVjSpIhNjPrqu3coUECsaSstCrjLZbcgYVmWvd9YbseZUWo1xvTJSU5m8n0zZ74z5xsu9+IdCq8zyL98i+KrNyiVJdQOefCHVRyUP6J6dICj9wVk0xkUiyXsl0so5nPY3c0ik04jl81hL5cn6ww+kP1cR5TQarchCDwajRp0XUcYhpjP51gsFpjNZlCU0c98A9VqHbV6HYOBTOIKhsMhRKmLykmNxBRwo5EK27bhej40w4JtWQgnE0a2XC4Zoe240HQDlm0hCAIWo/B9H47jICTzdDplMa7T6RDmAauKkuhjFSNys2GaPy5y3bPcquJ/DU6SJBiGwTYDC1QEH3sVB8VjFwWC7CcfzW8hZvMLEsqyjIBIpPIoDNNib0Pf0iLyKag0mrsQId14fqwO/hmngxr1/wkNw2SSqHsrp/4G+iwOMckjCAIfHjnjeR47SzuDdovrWOBUVT1LUJjEXersSLcgKTYk1YNmewjOEdC8POjhuLIPnhdYnLaPpmngavWvEFptNFsddHt9fP5Sx1HlBEKzjQbfhKJqmM4WmEznvxDOmCLPJYaR+TfJIvkpEul0UTxFvz8g61O02yK63R6DSggdxyM96bIqDHMMeShjNNYJoceqXcG0TXDJ7STiqefYevgUm4kknm1fx5NH9/F4J47YvTVcuXkN69E7SD3YwFZiAzfIOhpZQ+T2ZaxfvYTNaATRWAy37u4glYjjOySywrEYMs5JAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="edit source hale"
+        title=""
+        src="/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-44d6a.png"
+        srcset="/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-f4799.png 173w,
+/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-b3b1d.png 345w,
+/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-44d6a.png 690w,
+/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-bc0f7.png 1035w,
+/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-b50e5.png 1380w,
+/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-0ed32.png 2070w,
+/caaml/static/edit_source_hale-5a24c5f9e32d53339977e0ba9422b85a-55f2e.png 2560w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>And choice what you are interested in mapping, for now just <code>caaml_Region</code> is fine:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/choice_source_hale-0fd8ba91db010c5c4d570e4938e74b33-526b7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 70.61068702290076%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABXUlEQVQ4y6VTXW+CMBTl//8kX3RvIo5MQDPkG1ooBgWFuQjKWVuXJT4p7CQn6U3a09t7ThVrNsVSX2C5UmGa5mgahomPlQEl8ANEUYj1eoPt1oZt27i0LZ6h73vJ263HpevRfN9Q1h2Uuq7BGEOSJMgyhjRNQSlFnjN+UQSW5xgChRKKMAyRxDEXzFCW5WgWRQHFTxgKFsGxN/B9H87Wged5cF2Pj8CB6zh84x7n8/kpm6aBIpQFPpMSmqZBVVVoiwWmszcQQlDs9y8/93q9QhG3CwSs5rMjcn6UC5Ffti8Y9CDoJ5ksbFJiPp/L7kQM0pSi4xuGQApWZSULLzvJGcoOpcvD3P0TPBwOsnDoEbquc6GdjE7XdeMEq+reoZseEfPoiEwSnknh2CjBpr4fPH210oTdLh8c5gdBEez/MIoJgvBOsVZylmMIGf+eATfPsixZG36OiR5g8u7L9Q+kDyeRYAGk9AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="choice types hale"
+        title=""
+        src="/caaml/static/choice_source_hale-0fd8ba91db010c5c4d570e4938e74b33-44d6a.png"
+        srcset="/caaml/static/choice_source_hale-0fd8ba91db010c5c4d570e4938e74b33-f4799.png 173w,
+/caaml/static/choice_source_hale-0fd8ba91db010c5c4d570e4938e74b33-b3b1d.png 345w,
+/caaml/static/choice_source_hale-0fd8ba91db010c5c4d570e4938e74b33-44d6a.png 690w,
+/caaml/static/choice_source_hale-0fd8ba91db010c5c4d570e4938e74b33-bc0f7.png 1035w,
+/caaml/static/choice_source_hale-0fd8ba91db010c5c4d570e4938e74b33-526b7.png 1048w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<h4 id="set-the-target-schema"><a href="#set-the-target-schema" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set the target schema</h4>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-55f2e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACX0lEQVQ4y41TW08TURDujzU+GUM0xCgPjSEqEiEkIJIY9dUHExJ5UAst1wpELBTpZZe90Kbd7XZpd7vX7vbyOefoRkwMeJJvz2Rmzsw3l03l1j4juy3hILePo808yofHaFYVGFId+a1drK1+QObjKrJf1rG9s4f83i52NnPY2MhiPZNBLpvDVm6T5HV8zR8gJckqGloLoijiQlWhaRr6/T4GgwF0XYcsy5AkGaJQRaVcRrFYwlmpRH46DMNAq9WCotZQODkjnYGUaZpwHAftdps7OK6L4XCI8XiMKIoQUXDH9dHpWuTXQxiGPBlDEARwyT+iO45jrksBYxTPA2S/2dj4HiFbGPxGjMyhhU+7DbJZ2D4d4lSO4Qcxrjsp9vEDj1PvdruwbZtnG41GXGbMGRN2GHNmuzEgK0NRZFQqFQiCQL2qoNlsUhKdeifwVrAW/HfAhAljyQaRsGUyGxYbDBsW090YMMmcNJo9YMNIyr56Er9rA1qWzXvEyk4m9S+ENG2XtsEnhGFAfSf4Pn/r9HpUoQnP7f1am8TAwMr3PA/tbg+q4UA1aWUcH+GVAMyua3UcF/ZRrQpcz9an0+kgdVaiQZxLEM9l1OoNnP4o4ahwAkGUUK6KMMwO4sEI/Xj4B9GAV+R7PQR0/1WyoqhQadMV5QKNhkbyBf0ZCmq1OodJAV1abMfxOAvLuoSma2hfdimgz9kmsB0bqaXFJcwuv8fCy7eYm1/Cu8X7ePPqOV6vzGLm2QTuPLyHyfQTLL+YxsL8NB6QnJ6awNTj25i8ewtz6SmkZ2bw6OkKludn8RNsYLtq1p3PZgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="target hale"
+        title=""
+        src="/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-44d6a.png"
+        srcset="/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-f4799.png 173w,
+/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-b3b1d.png 345w,
+/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-44d6a.png 690w,
+/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-bc0f7.png 1035w,
+/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-b50e5.png 1380w,
+/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-0ed32.png 2070w,
+/caaml/static/target_hale-d69d1574440fdaecf3c1b61214a2484a-55f2e.png 2560w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Define the source as a file resource (the modified XSD CAAML schema is part of the data package):</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/target_file_hale-bb35081e3a9a0f31eebd6296e8f7f63c-675dc.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 78.10858143607705%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABcElEQVQ4y+WT207DMAyG+/5vhQQabUfRDuohbU7NmrZs42pCIE37scOYBgKJCe6I9MmO7bh2GkfFzTWyeYL5coY8zz+wWCwQxzHSNA0ySZKgf447J2qVgiYaqeB9B16HwwH7/R6XrN3TM8bHHaKXoUff9xjHEZv1JkjvPbbb7UUJC/2Aq6lFZIwJbaRJislkAmktFFWrqOq2NRC1CLpzDpZ8spEQQsD5h9BVLWpCoCwrGOMQ8eEsm+FueofsPsMspwC9glCODrDuUMkWgmws2ccUkmNWyIVCVVUoioIKaKlCrTGfzVEWJZS2IYH16x+jbAcpJf2QAtZQy5oqjG9jLBfLU6tBHtFKk5RvdnVmO+5Z56tgjDaIXOvCvTR1E+7jXYqjLsId1SefqESIf9/zB1rbnggJzw2/5T8mHPoBf0k0DiP+kqj3NMtfwPPsu+/pVl3gs/3bCrl8TsxvbhjedH7ELNmnacJ45EIs+flRc8JXx0KSMF2+LP0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="target file hale"
+        title=""
+        src="/caaml/static/target_file_hale-bb35081e3a9a0f31eebd6296e8f7f63c-44d6a.png"
+        srcset="/caaml/static/target_file_hale-bb35081e3a9a0f31eebd6296e8f7f63c-f4799.png 173w,
+/caaml/static/target_file_hale-bb35081e3a9a0f31eebd6296e8f7f63c-b3b1d.png 345w,
+/caaml/static/target_file_hale-bb35081e3a9a0f31eebd6296e8f7f63c-44d6a.png 690w,
+/caaml/static/target_file_hale-bb35081e3a9a0f31eebd6296e8f7f63c-bc0f7.png 1035w,
+/caaml/static/target_file_hale-bb35081e3a9a0f31eebd6296e8f7f63c-675dc.png 1142w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Then click on <code>Next</code></p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/setting_target_hale-870940e8840fc7f3e4cdf080d21048f7-ea61e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 78.01047120418848%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABF0lEQVQ4y+2U20rDQBCG9/1fyTtFY84U7CY1TdIkzZ4CElBESMzv7kYLxl60xcsufMzOzvDvMDBDopWP1VOMNV2DUvqLMAzhui48zzsQxzGSJPmT+wPJsmeURWmTpFIYhgHTNFlOPSb39f0D6uUNpNMiUioIIbWVUNpnbYu+7zGO40mCw/gJWijcRRVIQhOk6QYbjeACneqg9AfnYoriXILcOz481+DBN31yZ5wH5/vNR+AHFsd5RBiEyLeFbdMxSF01qKsaTd0cWPrnQKTp3T9yFbwKXiLIGccSxpieZ4Z236LVc23uS2xsP8f22jbNzNEKzUwbm6YpynIHs0DMFFS7ysbM8sjzHNssAxcdglzhJspxmwh8AVr2nmGdKI0uAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="setting target hale"
+        title=""
+        src="/caaml/static/setting_target_hale-870940e8840fc7f3e4cdf080d21048f7-44d6a.png"
+        srcset="/caaml/static/setting_target_hale-870940e8840fc7f3e4cdf080d21048f7-f4799.png 173w,
+/caaml/static/setting_target_hale-870940e8840fc7f3e4cdf080d21048f7-b3b1d.png 345w,
+/caaml/static/setting_target_hale-870940e8840fc7f3e4cdf080d21048f7-44d6a.png 690w,
+/caaml/static/setting_target_hale-870940e8840fc7f3e4cdf080d21048f7-bc0f7.png 1035w,
+/caaml/static/setting_target_hale-870940e8840fc7f3e4cdf080d21048f7-ea61e.png 1146w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Finally click on <code>Finish</code></p>
+<h3 id="configure-the-relation-between-source-and-target-entities"><a href="#configure-the-relation-between-source-and-target-entities" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure the relation between source and target entities</h3>
+<p>We will now define the <em>caaml_Region</em> → <em>Region</em> relation (our case is the simplest one):</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-55f2e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACM0lEQVQ4y6WT208TQRSH9481PhliNMQoD2DwgkQICYgkRn31xWgQBVoolIsQIWDtjcJ2e6Et3W4ve+3SG5+zqyIkxmiY5MvOOSfzOzM7v5FCHxYJfwqyMrfA2nyQrcAqGwthMQ8xP/uRuXdvCcy+Z3kxyNraBtub64RXQiwtLRMMBAgth1gNrYh5kM+b20hpJcORLJNKHXDocZhCTsukFQVFkE4ryHLaryUTCSKROLF4nFLpBFVVKZfLKJkce19jIqci5fN5Go0GmlaldKJSKBQolqvElRo7qYbAYD2qsbRbInKkYdkunU7Hp9lsYlkWLfFtt9t+Tup2u/R6vXO8uNPtcdru4bZ6NC/gtn4I/W1IZ2dnlxJe7Df5mb9Y95v9r6A3CmWHrf0i4Z0Sas29uqBatYgdnhCXqxh262qCXuz9yz81+ifBRkP3b8t13fOb+hPu6SmWaeIIXLeJI9Y4juOvNQ2DSkXDtgwkTdPOCx66rmPbNpW6QUY1yWgONdPBvSDg2I7wX5H9yBeSyQPfOh7FYhEpGk/icSQr5I+LfIvG2NndIxpLkEim0Gp12h3PRt3fCPvYlklVLVAXHr505Gw2h/dalEyWXO5YvI6M/zK8fDaXF4avie4Opmn7u9ANFVXLUanW/Z16p/mFbupIU5NTjE6/YeLZK8bGp3g9eZuXz5/wYmaUkcc3uXH3Fv2DD5l+OszE2DB3hh4wNNDHwP3r9PddY2xwgMGREe49mmF6fJTv3gG/k7NiTJEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="set relation hale"
+        title=""
+        src="/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-44d6a.png"
+        srcset="/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-f4799.png 173w,
+/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-b3b1d.png 345w,
+/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-44d6a.png 690w,
+/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-bc0f7.png 1035w,
+/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-b50e5.png 1380w,
+/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-0ed32.png 2070w,
+/caaml/static/retype_hale-9967d3b36b32f435f33d881dc7840c8c-55f2e.png 2560w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<ul>
+<li>
+<p>Select the <code>caaml_Region</code> type in the <em>Source</em> section of the <em>Schema Explorer</em> view;</p>
+</li>
+<li>
+<p>Select the <code>Region</code> type in the <em>Target</em> section of the <em>Schema Explorer</em> view</p>
+</li>
+<li>
+<p>Click on the blue bi-directional arrow icon in between the <em>Source</em> and <em>Target</em> sections of the <em>Schema Explorer</em> view and select <em>Retype</em> from the popup menu</p>
+</li>
+</ul>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/select_retype_hale-8ff866c2b9e26ab83d1c3e9146f293dc-1d424.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 87.93103448275862%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAABG0lEQVQ4y+2UX0vDMBTF8/0/kAh7qfgHVpS1XYWl1S5p0ibtHgoVQbDtMbdSVLRjEx98WOAHObknh5uHG3Z7fobL6wtcLT34vv8jnudhsVjM1j/DpBAQDs45kiTBMWsYBvSO127A80uP5qkDa9sWSmuUZQljDKy1KIrS6QJd3+PYxbbZFutojUIXKCloBqoHQYhc5nt9TD5kiLhAHMe4d9DTm6b5QprlkEJiFaUIwwhSym8eQuQuUCsNgjqYY6qrA3ysshX+klPgKfBfBO6by98wdlhXNayxMKUZ9wTtP3Tl5jfHrt7h3V+NnwRpkVv4scZNkGHFLRgFETSLZJqCaC4nrV0tTdLxjLRSCnyzGe8IZXDHCyzXjwhSgzcL4zSnBiD0qgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="select retype hale"
+        title=""
+        src="/caaml/static/select_retype_hale-8ff866c2b9e26ab83d1c3e9146f293dc-44d6a.png"
+        srcset="/caaml/static/select_retype_hale-8ff866c2b9e26ab83d1c3e9146f293dc-f4799.png 173w,
+/caaml/static/select_retype_hale-8ff866c2b9e26ab83d1c3e9146f293dc-b3b1d.png 345w,
+/caaml/static/select_retype_hale-8ff866c2b9e26ab83d1c3e9146f293dc-44d6a.png 690w,
+/caaml/static/select_retype_hale-8ff866c2b9e26ab83d1c3e9146f293dc-bc0f7.png 1035w,
+/caaml/static/select_retype_hale-8ff866c2b9e26ab83d1c3e9146f293dc-1d424.png 1044w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Verify from the popup window that the entities are those previously selected and click on the button <code>Next</code> and then <code>Finish</code> on the next window.</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-0c959.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 11.681855840927922%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAWklEQVQI13XM0QqAIAyFYd//FSMqEN1a2RIvQoUTemfQxQ+DjzPj/Q4Rger9k8Jai4MYzAwiGjxcis0ynKP+x5RSUGuFRMF6Tsg5DzXnkBDT0++vLzL3fav5CxCrmRf1IeFJAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="new retype hale"
+        title=""
+        src="/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-44d6a.png"
+        srcset="/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-f4799.png 173w,
+/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-b3b1d.png 345w,
+/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-44d6a.png 690w,
+/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-bc0f7.png 1035w,
+/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-b50e5.png 1380w,
+/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-0ed32.png 2070w,
+/caaml/static/executed_retype_hale-e761f07e3084d5a8508b8a2c9d32033b-0c959.png 2414w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>A new retype mapping will be added in the <em>Assignment</em> view.</p>
+<h3 id="configure-the-relation-between-source-and-target-properties"><a href="#configure-the-relation-between-source-and-target-properties" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure the relation between source and target properties</h3>
+<p>Once the type relation have been assigned, it is time to configure the relations between source and target properties.</p>
+<h4 id="id-property-as-formatted-string"><a href="#id-property-as-formatted-string" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ID property as Formatted String</h4>
+<p>The mapping between the source and target is not completely done because we want more. Specifically we'd like to have a reword of the GML identification <code>id</code> of the <strong>Region</strong> feature. Effectively we want to end up to something like this:</p>
+<div class="gatsby-highlight">
+      <pre class="language-xml"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">caaml:</span>Region</span> <span class="token attr-name"><span class="token namespace">gml:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>region.IT1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+</code></pre>
+      </div>
+<p>In order to achieve that we have to add a new mapping property:</p>
+<ul>
+<li>Expand the list under the <em>caaml_Region</em> and <em>Region</em> types, then select the <code>ID</code> attribute from the <em>Source</em> type of the <em>Schema Explorer</em> view and finally select <code>id</code> attribute from the <em>Target</em> type of the <em>Schema Explorer</em> view:</li>
+</ul>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-55f2e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACjElEQVQ4y5WT20sbURDG888WWvGlUPqi1LaYClKQVguC0BfpU6nUW6rGSxTaStHGW5PsuheNMSaby2bvySbm17OLVJ9su/Axc2aZ78z5ZiaxubjKdirN1tIKO6k1dpbXySxtsrWYZmFunoVPH1mZnyO9skoms8NOZoONtVVSyym+pFJsrG+Q2dwivZbm29ddEqqmc6ooSFIBOYIso6gKqqahCaiqhqKo8b9cLs/hUS625fIV1WqVSqWCphc5OMoLv0biWNlDKR+TvzjgSN8ne7pLqVpEPs8hXRyiVk44Oc/yU8S1ywJXjSu06imWZ9K0XM4u6/iOS91qUrXLJAqKjGk3cAMbL3BwfZtO2EY715EETNei0/UJQo+g49Pthtz3JQqySq1Ww/M8fN+PreN1OJIu+H6oiSpNtEqbfCngohbQ7nTvJ7Rsh3a7Tb/fvwn1sd0ASVaENjqtVouW08ZohbTckDD8C+EtEX8ITzSfz5tFFrevWPkRoJV7In7N9fW1ePJ/EkZnPwhoNBqxBNG51+vFZP9EaJqtODEQJGEYxsmu62KaoovNZoxI10gWxxaNEwgCofWN3lGubVkYRg3XsUjcbUiESLOI0Gha6FUbvebRsEWH7xBEtmpUyJ7si5nMYYtLIkiSROLg8Bj5VKUkBtV2fX7lC+ztZ5EVTfgSFaNO2O3TDnu3EJ22LBNdL1AqXd5KJS5LRJsQQdfPxPjUOTs7jzejWCzFviEIHccTFXhYYl7rjUtRXZ2a0LhRN4TWzfhFjuNg1MWmTE1OkZz8wOT0LBOvJ5iZfMrs+wmmp8YYG37Ek5HHDI48Jzk6ysybJKPJFwwODfPyxQDjww8YGnjI6KtnDCff8XZ8jN/0lbUhG4KexwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="ID retype hale"
+        title=""
+        src="/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-44d6a.png"
+        srcset="/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-f4799.png 173w,
+/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-b3b1d.png 345w,
+/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-44d6a.png 690w,
+/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-bc0f7.png 1035w,
+/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-b50e5.png 1380w,
+/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-0ed32.png 2070w,
+/caaml/static/id_retype_hale-befb6db3963733d6effa3a7de933d3cc-55f2e.png 2560w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>then click on <code>Formatted String</code> item</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/id_selection_retype_hale-6bf5611d32b55989204bb05945625f47-26762.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 52.26993865030675%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAA5UlEQVQoz8WSy4qEMBRE8/+fJgPDNIzGV+epiSYbwZ1CTW6aXqlN92oWh5tFpUhVLrsVBb5/vsB5Da31ASklmqbJCCFONYSQGnWrwGKMcM4hhAA6r+uKfd8/YtuebGB13cJoA2ssrD2ilYaSKs98VuZUR5APU3qAMSZdkliW5QBFrsoKUkjoVMtd6JzkTOu9B+MVR1ny7P6KLptJuNFdQq9nTdunMnvM03zJIw7FGhDmcAmZMpvidl2PPhFDPMU7j8lPb8HeFf6f4auSn9BK0aS1sYND8Stx6zzGYYS4i1wJfRxp/gBwyuV+awxz7gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="ID selection retype hale"
+        title=""
+        src="/caaml/static/id_selection_retype_hale-6bf5611d32b55989204bb05945625f47-44d6a.png"
+        srcset="/caaml/static/id_selection_retype_hale-6bf5611d32b55989204bb05945625f47-f4799.png 173w,
+/caaml/static/id_selection_retype_hale-6bf5611d32b55989204bb05945625f47-b3b1d.png 345w,
+/caaml/static/id_selection_retype_hale-6bf5611d32b55989204bb05945625f47-44d6a.png 690w,
+/caaml/static/id_selection_retype_hale-6bf5611d32b55989204bb05945625f47-bc0f7.png 1035w,
+/caaml/static/id_selection_retype_hale-6bf5611d32b55989204bb05945625f47-b50e5.png 1380w,
+/caaml/static/id_selection_retype_hale-6bf5611d32b55989204bb05945625f47-26762.png 1630w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>double check source and target variables then click <code>Next</code></p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/id_formatted_retype_hale-0c7101f6520930e50169205377a7b807-f1c82.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 52.33415233415233%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAA2UlEQVQoz7WSYWuDMBCG8/9/2aCFsZZijE1iNCarIkao+kHxrclYKYyOltrAwx1HOLh7juw3G3x+bcEYg1LqD0IIUEoRxzE450jTdEFBShny6z+pQJMUpKoqaK3hY9M0IdZ1HXDOYZqmhxg94wSSa4OiKND3/cu0bQvSdR3WesMwvKGhaxx80zVo3TIyjaLFIMPxyJGwBFJICC6CnHt4u78ibylPJch3WS92xqdGu7emnx2eO8zzvAreNLHG4j9MYaBzHXK/Fmst8iwLdX9u/vBlZvGxEzhwgwvpT//wfjoFfQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="ID formatted retype hale"
+        title=""
+        src="/caaml/static/id_formatted_retype_hale-0c7101f6520930e50169205377a7b807-44d6a.png"
+        srcset="/caaml/static/id_formatted_retype_hale-0c7101f6520930e50169205377a7b807-f4799.png 173w,
+/caaml/static/id_formatted_retype_hale-0c7101f6520930e50169205377a7b807-b3b1d.png 345w,
+/caaml/static/id_formatted_retype_hale-0c7101f6520930e50169205377a7b807-44d6a.png 690w,
+/caaml/static/id_formatted_retype_hale-0c7101f6520930e50169205377a7b807-bc0f7.png 1035w,
+/caaml/static/id_formatted_retype_hale-0c7101f6520930e50169205377a7b807-b50e5.png 1380w,
+/caaml/static/id_formatted_retype_hale-0c7101f6520930e50169205377a7b807-f1c82.png 1628w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>assign the format pattern for the retype which is in our case <code>region.{ID}</code></p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-0c959.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 13.504556752278377%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAeElEQVQI13XM3QrCMAwF4L7/43nlhQymNOs620TXKTQtRzfmQKYHPgj5M0QEEfmLWWCtRXA9bNfDe7/bCZHRtB3a8wVGVXGfEo7uAJkics47dL1h4PRzlp4jGn/C/GdmsCakiFrropSy1aoVNIxw8bH1vhXw+/aTF8HY500ffMoPAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="ID formatted string hale"
+        title=""
+        src="/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-44d6a.png"
+        srcset="/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-f4799.png 173w,
+/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-b3b1d.png 345w,
+/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-44d6a.png 690w,
+/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-bc0f7.png 1035w,
+/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-b50e5.png 1380w,
+/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-0ed32.png 2070w,
+/caaml/static/id_formatted_string_hale-1865f2343a003b2c37fb4f108f5a637f-0c959.png 2414w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>you finally should see a new mapping item in the <em>Alignment</em> view</p>
+<h4 id="general-properties-as-rename"><a href="#general-properties-as-rename" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General properties as Rename</h4>
+<p>We want then to configure the remaining properties as a simple pass through from source to target type. So we can see how it works for one of them and then apply the concept to the rest.</p>
+<p>Let's apply the <strong>Rename</strong> to <code>description</code>:</p>
+<ul>
+<li>Expand the list under the <em>caaml_Region</em> and <em>Region</em> types, then select the <code>description</code> attribute from the <em>Source</em> type of the <em>Schema Explorer</em> view and finally select <code>description</code> attribute from the <em>Target</em> type of the <em>Schema Explorer</em> view:</li>
+</ul>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-55f2e.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACqElEQVQ4y5WT228TRxTG969FKtAXVKkvREFA3KhSpQiZqxA8gMRDBWqAmiTGcdIqFUg2TpzE9tq767XjOHuxd7273vU1/jG7agNPqIz0aWbOzPnOmTPfkbbfbLKbyZJ/u8FfmS3+/jPLztsc+TdZXr9a5/XL39n44xXvN8S9nV128zlyW5tkMu94l8mQe59jZztPdivLP3sfkFStSUNRkOUa9Rh1GUVVUDUNTUBVNRRFTc4qlSoH5Uoyd7tdTNPEMAwUrUX5sCrWNtKhUkDpHlI92afcLFJqfKBjtqm3KsgnB6jGEUetEp+EXTutcdY/QzMbeKGL6w3ROz2iYEjfdzD9LlKhXEA/VTm1Wgk6po43DKgoGkVZpW079PwAy/Nxg5BwFBFOQubzubg3xnIjJtM50/mEcBwiFSsFtK6IPGhheG0BQdrrs1eus/HxgNx+g91jnfyRSlnvEo0nfGtInog+Ho9ZLBb/mhbU9IjNvRPWt1tk9hzqJ57IaiAyCJjOpt8m/ELEBaHrjyiJDMvHCpYTP2nB+fl5gtls9n2E8T4ajXAchyiKkn1cr/9N6LqDxHEkSKbTaeI8HA4Twv8QhiEjUZbA9wkFRvHHCJ/YHvv6nodl2QwDD8m27YuDGIPBICG0HI+m6dO0QyEJQfgVQTyblkHpqCg0WcEXQWLIsoy0f3BIvaHS6Z7hDyOOqzUKxRJ1IZvjqoxh9cRHLBgLaVxgMsPzXJrNGp3O6ZdSiWBS3Akxmk0d2+6h662kM9rtTrK2BGEg9OcL8Q4GLpZtYJg2dr9Pv2fR7zvJi4JAaLUnOiWdvkcq/YL0w+es/bbG4/TPPHuyxoO7q6wuXean5Wv8uHyD1MoKj+/8wu3ULa5eX+LmzSv8unSJ61d+YCW1zFLqPk8fPeQz9nOxD3oqlzEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="description rename hale"
+        title=""
+        src="/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-44d6a.png"
+        srcset="/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-f4799.png 173w,
+/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-b3b1d.png 345w,
+/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-44d6a.png 690w,
+/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-bc0f7.png 1035w,
+/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-b50e5.png 1380w,
+/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-0ed32.png 2070w,
+/caaml/static/description_rename_hale-cba72a3f31f3b26562ae2952dd335e0f-55f2e.png 2560w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>then click on <code>Rename</code> item</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/description_selection_rename_hale-724329766289d2ffbda7bddefc83b7db-ee595.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 79.5608108108108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABQ0lEQVQ4y+2UX2uDMBTF8/0/z173Wlbq2rX1X13UGo2JdpVVLBvDeuYN+FC0jLE97GGBH9wkh5t7L0eZP3/Ayl7A9Vz4vj/JcrmEZVk37wnP82E7HphIEuyCAJvtBlJKNE2D8/mMtm3x1eq6ztBeOrx/XNC8tWBVVUEpBa00DocDyqI0cV3XJvF3YfyZw3VcxFE8Yh/vkeyTK+hsSjvoWZZJCPViqsz7lqmFYdWnGo5tw95uEfIQ4mkDkUpEqcbxWI1GcHo9gdGrlF0kYpJUpIZBR/EtLcHCXYDF4xpRGCGOY6hcjQh433qfbL5YIex1pJ3S8SgBoxfDPuCcmxmUZTlC9mPJ0qzXCdDMqdIpXZ7nYIUu8Jv8J/yLCaf89BOuKqSfAnmOHE8xCQYTa63hOI7xGu3pUyRPku5+LXE38zDzC3wCBMGgJlyWohkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="description selection rename hale"
+        title=""
+        src="/caaml/static/description_selection_rename_hale-724329766289d2ffbda7bddefc83b7db-44d6a.png"
+        srcset="/caaml/static/description_selection_rename_hale-724329766289d2ffbda7bddefc83b7db-f4799.png 173w,
+/caaml/static/description_selection_rename_hale-724329766289d2ffbda7bddefc83b7db-b3b1d.png 345w,
+/caaml/static/description_selection_rename_hale-724329766289d2ffbda7bddefc83b7db-44d6a.png 690w,
+/caaml/static/description_selection_rename_hale-724329766289d2ffbda7bddefc83b7db-bc0f7.png 1035w,
+/caaml/static/description_selection_rename_hale-724329766289d2ffbda7bddefc83b7db-ee595.png 1184w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>double check source and target property then click <code>Next</code></p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/description_params_rename_hale-94286564494dfc6541b2d851f81fd22d-37c90.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 79.79626485568761%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABoUlEQVQ4y62UWU/rMBCF/f9/Dw/w0Fe6ZY+zlDRp0yWb1D7RQq+g5/qMCAIJEEsrfRp7nIyPjydV6XgEV08RJzHSNP0Qx3FgWdan6yRJUugogVqVJeI4xmyWIgxDlGZ+OBxwPB5xOp3w1e98PgtPz2c8/nvG/cMT1H6/R9u2aOoadVWh6zp0bYemabDb7aT4T1DLxRKBH0AHocRVucJ6tf41qshzDG+H0FrL0XlsEgQBfN9HaDZKXvI61JLnxlEUmXEoz/C9althUSygNusNsiwTZX+lXJZG4TzHZDwRrKmF6WRqFCXITX6ezYV+zNiPs7vsdZ2FehQT19c3GAwG8FwPnufDdVz4JvJovueZtnFlzbFtidy4f8axHSle5IWgKJW+1LzlP1IULwXFbBqtI7NrgFk6k1wcxZKjz99hu9lC0ZPRaCzSbcuGbSJ95DEZ6a3kDZwzMpfdzcGWe4vcMo2kCvHOdaU96AUXf4Nq6sZ8IfVFYC3VNi0uibqUup53CimZN8Wb763gJ1mZPw3O6a28aFqkb3DmB0GFq9sEw7TFf60mhyyc1PGhAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="description selection rename hale"
+        title=""
+        src="/caaml/static/description_params_rename_hale-94286564494dfc6541b2d851f81fd22d-44d6a.png"
+        srcset="/caaml/static/description_params_rename_hale-94286564494dfc6541b2d851f81fd22d-f4799.png 173w,
+/caaml/static/description_params_rename_hale-94286564494dfc6541b2d851f81fd22d-b3b1d.png 345w,
+/caaml/static/description_params_rename_hale-94286564494dfc6541b2d851f81fd22d-44d6a.png 690w,
+/caaml/static/description_params_rename_hale-94286564494dfc6541b2d851f81fd22d-bc0f7.png 1035w,
+/caaml/static/description_params_rename_hale-94286564494dfc6541b2d851f81fd22d-37c90.png 1178w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Leave parameters as it is and click <code>Finish</code></p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-0c959.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 690px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 16.15575807787904%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAeklEQVQI13XMywrCMBCF4bz/A+pCRZFkaC5tkopdzCScNosIbfHAt/qHUYY8rHVIKf+RQEQYrYWmATHGXZ9iwltvzRB8CFAiglIKXHa4+wuY+US7GWNe0G6P7TZc0X80qtaKtvT9gGb9C51sHibCTcupcWE8wwtSBX0ryUTm/cdx+LMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="description renamed hale"
+        title=""
+        src="/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-44d6a.png"
+        srcset="/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-f4799.png 173w,
+/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-b3b1d.png 345w,
+/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-44d6a.png 690w,
+/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-bc0f7.png 1035w,
+/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-b50e5.png 1380w,
+/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-0ed32.png 2070w,
+/caaml/static/description_renamed_hale-0becfe6eb40eb3d6802a1a0f9538a74f-0c959.png 2414w"
+        sizes="(max-width: 690px) 100vw, 690px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>You should now see the <em>Alignment</em> view updated with the <em>Rename</em> mapping for <code>description</code>. Then it's just a matter of applying the same to all properties from the source type.</p></div></div></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-ec8c5fdb00fa56319f02.js","99219681209289":"component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js","213130420965792":"component---src-templates-post-jsx-cb5aa21e36c29df4a4b0.js","112254247690605":"component---src-templates-lesson-jsx-d57a97cff3424e3f60b1.js","129745722219136":"component---src-templates-category-jsx-79f394448ef5d1ff97f1.js","144251824217401":"component---src-pages-about-jsx-d14a37b14bc25e02553e.js","213534597649335":"component---src-pages-index-jsx-09e377149a1ea1e5c9c0.js","60335399758886":"path----557518bd178906f8d58a.js","210333531512890":"path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js","157804204402133":"path---post-one-f0e4a357bc589246bd89.js","105755850038661":"path---start-the-environment-5209e89a0fa749b853dd.js","204619605570785":"path---clean-data-ab1e3880f25ca9282c55.js","35988890602919":"path---configure-the-application-schema-for-caaml-30da2204746b277c7093.js","135243639824435":"path---wcs-examples-569a3aeda95139739e14.js","122655708082691":"path---caaml-model-design-43d14d4d16d9a90c430c.js","192710774058166":"path---wfs-examples-c09935482fe11f3f19ea.js","48363164877513":"path---wms-examples-b80bd8bf17b3df279da8.js","241898152317548":"path---introduction-to-inspire-546147c28dd82af1214b.js","151841215545449":"path---introduction-to-caaml-b92cd7a501693cea1081.js","219027500998625":"path---data-and-geospatial-tools-07b6c7eb8b5118f40359.js","278353287553705":"path---wps-examples-d84e9930da77daa7085a.js","46114540067543":"path---introduction-to-wms-b49c8850a2aecdc5bd03.js","131175013543593":"path---introduction-to-wfs-0e6c13f79ef9f3e4b587.js","172278691103234":"path---introduction-to-wcs-2be765b8778f745d5667.js","170398892715585":"path---introduction-to-ogc-23d37b1251e61df6379c.js","277964865062957":"path---load-data-cdd4d15d3a719f59afc8.js","113291268836709":"path---push-the-configuration-to-geo-avalanche-78536a814d3076399592.js","158438950570844":"path---lesson-six-975e3a55871e03c93cb2.js","275540166241337":"path---introduction-to-wps-ee0c793fe252ecc58dd7.js","170258835863156":"path---query-our-region-features-641446c01cb76a84b289.js","123203233883693":"path---populate-region-0ec6c9a99acb81f6ed43.js","86242794778721":"path---categories-tech-b53b68288f3e8b92d546.js","273950069227526":"path---about-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-ead2eeab514b8ce43ab8.js","79611799117203":"component---src-layouts-index-jsx-356aa9ebd94b9899d6e9.js"}/*]]>*/</script><script>
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82450300-1 ', 'auto');
+  </script><script>
+          window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
+      </script><script>/*<![CDATA[*/!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/caaml/commons-0b43cbb832d47af925bf.js","/caaml/app-ec8c5fdb00fa56319f02.js","/caaml/path---configure-the-application-schema-for-caaml-30da2204746b277c7093.js","/caaml/component---src-templates-lesson-jsx-d57a97cff3424e3f60b1.js","/caaml/component---src-layouts-index-jsx-356aa9ebd94b9899d6e9.js"])/*]]>*/</script></body></html>

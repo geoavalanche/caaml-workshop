@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>http://geoavalanche.org/caaml/offline-plugin-app-shell-fallback/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/post-one</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/start-the-environment</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/clean-data</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/configure-the-application-schema-for-caaml</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/wcs-examples</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/caaml-model-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/wfs-examples</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/wms-examples</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/introduction-to-inspire</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/introduction-to-caaml</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/data-and-geospatial-tools</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/wps-examples</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/introduction-to-wms</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/introduction-to-wfs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/introduction-to-wcs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/introduction-to-ogc</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/load-data</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/push-the-configuration-to-geo-avalanche</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/lesson-six</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/introduction-to-wps</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/query-our-region-features</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/populate-region</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/categories/tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://geoavalanche.org/caaml/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
