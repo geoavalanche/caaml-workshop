@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/caaml/app-ec8c5fdb00fa56319f02.js","7245382cbe9078161088d0478bf4bf45"],["/caaml/commons-0b43cbb832d47af925bf.js","e539093acc0ba7ce47c0b276ddf5475f"],["/caaml/index.html","3881e366dfe7e4be8fc324b384f8218e"],["/caaml/manifest.json","12e6ec6d9420f7bbe4602e86f6ded649"],["/caaml/offline-plugin-app-shell-fallback/index.html","88940e5886cab583fb8d22a1f6c0a018"]];
+var precacheConfig = [["/caaml-workshop/app-ec8c5fdb00fa56319f02.js","abe2cd0fe93f21849f64f99ad5b4c079"],["/caaml-workshop/commons-6191a09563b5aa6ea46f.js","2f6149c52e7d18d73ada19ad0853e956"],["/caaml-workshop/index.html","3546e52ad99c9c29576c09fac761c96d"],["/caaml-workshop/manifest.json","519a476a313760a0c9b21083bf43fade"],["/caaml-workshop/offline-plugin-app-shell-fallback/index.html","df4d7f4325c3ea0303cee6f9fc30d1e6"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
