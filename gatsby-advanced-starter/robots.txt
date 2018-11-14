@@ -2,4 +2,4 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: https://geoavalanche.github.io/caaml/sitemap.xml
+sitemap: https://geoavalanche.github.io/caaml-workshop/sitemap.xml
