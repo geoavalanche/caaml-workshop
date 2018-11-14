@@ -1,6 +1,6 @@
 {
   "name": "ogc-caaml-inspire",
-  "description": "GatsbyJS starter designed with documentation and tutorial websites in mind.",
+  "description": "Tutorial on CAAML, OGC standards and INSPIRE.",
   "version": "1.0.1",
   "author": "Francesco Bartoli <francesco.bartoli@geobeyond.it>",
   "dependencies": {
