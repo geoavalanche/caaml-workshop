@@ -5,7 +5,7 @@ module.exports = {
   siteTitleAlt: "CAAML meets OGC standards and INSPIRE", // Alternative site title for SEO.
   siteLogo: "/logos/camel.png", // Logo used for SEO and manifest.
   siteUrl: "http://geoavalanche.org", // Domain of your website without pathPrefix.
-  pathPrefix: "/caaml", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  pathPrefix: "/caaml-workshop", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "How to use OGC standards and pushing CAAML into operational phase efficiently.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
